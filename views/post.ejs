@@ -1,0 +1,21 @@
+
+
+<%- include("partials/header.ejs") %>
+<!--Displays each individual post-->
+<!-- Body Section-->
+<body>
+  <div class = "content">
+  <div class="container p-5">
+    <div class="p-5 bg-white rounded-3">
+      <h1 class="serif"><%= post.title %></h1>
+      <p><%= post.date %></p>
+      <p class ="space"><%= post.content %></p>
+      <a href="/edit/<%= post.id %>">Edit</a>
+      <a href="/">Back to Home</a>
+    </div>
+  </div>
+</div>
+</body>
+
+<%- include("partials/footer.ejs") %>
+
